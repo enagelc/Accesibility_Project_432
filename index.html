@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Hello, my name is <b>Emilio Nagel</b></h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Howdy, My name is Emilio Nagel and I am currently a junior studying Computer Science. I am currently learning more about accesibility 
+          and universal design in order to shrapen my skills as a developer. On top of this, I get to learn how to
+          make applications and projects that anyone can enjoy regardless of physical or mental limitations. 
+          I also enjoy playing tennis and am currently learning to play pickleball. In my free time, I enjoy watching the Premier League and
+            cheering on my favorite team, Liverpool. I am also a big fan of the young tennis player, Carlos Alcaraz.
+        </p>
+        <img src="me.jpg" alt="Emilio Nagel Profile Picutre" />
+        <img src="calrospic.jpg" alt="Tennis Player Carlos Alcaraz" />
+        <img src="disability.jpg" alt="4 Disability symbols" />
+      </section>
+
+      <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Tennis</li>
+          <li>
+            <a href="https://usapickleball.org/what-is-pickleball/"
+              >Pickleball</a
+            >
+          </li>
+          <li>Computer Science</li>
+          <li>Watching Premier League</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form
+          action="mailto:enagelc@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
